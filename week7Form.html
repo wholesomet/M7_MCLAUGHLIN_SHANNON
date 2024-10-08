@@ -24,20 +24,17 @@
 	
 	<h2>Contact Us</h2> 
 	<div class="form"> 
-		<form> 
-			<label for="fname">First Name:</label>
-			<input type="text" id="fname" name="fname"><br>
+		<form action="/action_page.php"> 
+			<div class="nameEmail">
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="fname"><br>
+				
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email"><br>
+			</div> 
 			
-			<label for="email">Email</label>
-			<input type="text" for="email" id="email" name="email"><br>
-			
-			
-			<label for="message">Message:</label>
-			<textarea for="message" id="message" name="message" rows="8" cols="50"> </textarea><br> 
-			
-			
-			<input type="checkbox" id="notification" name="notification" value="notification">
-			<label for="notification">I'd like to be notified of updates on Smith Photography</label><br>
+			<label>Message:</label>
+			<textarea id="message" name="message" rows="8" cols="65"> </textarea><br> 
 			
 			<input type="submit" value="Submit">
 			

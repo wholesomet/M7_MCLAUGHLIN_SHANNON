@@ -59,6 +59,7 @@ h2, h3, h4 {
 
 h2 { 
 	margin-bottom: 31px;
+	color: #1b998b; 
 }
 
 form, h2 {
@@ -68,9 +69,16 @@ form, h2 {
     align-items: flex-start;
     align-content: center;
 }
-	/*to add space between first 3 labels*/
-	form > label:nth-of-type(-n+3)  {
+	/*adds space between first 3 labels*/
+	.nameEmail, div.nameEmail+label {
 		margin-bottom: 9px;
+	}
+	.nameEmail {
+		display: flex;
+		margin-bottom: 18px;
+	}
+	.nameEmail > label:nth-of-type(2) {
+		margin-left: 9px;
 	}
 	
 
