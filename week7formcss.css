@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*******************************************************************
+
+				Affects mutiple sections
+					
+***************************************************************************/
+
+	
+h1, h2, h3, h4 {
+	font-family: "Verdana";
+}
+p, li, label {
+	font-family: "Trebuchet MS";
+} 
+
+/*******************************************************************
+
+					Heading
+					
+***************************************************************************/
+h1 { 
+	text-align: center;
+	color: #1b998b; 
+}
+
+nav {
+	background-color: #2e294e; 
+	display: flex; 
+	justify-content: center;
+	flex-wrap: wrap;
+    align-content: center;
+	width: auto;
+	height: 58px;
+} 
+	nav li { 
+		list-style-type: none;
+		float: left;
+		margin-right: 22px;
+	}
+	nav a {
+		color: white;
+		text-decoration: underline;
+	}
+	
+
+/*******************************************************************
+
+				Body 
+					
+***************************************************************************/
+body {
+	/*top, bottom & right, left*/
+	margin: 0px 0px;
+}
+
+h2, h3, h4 {
+	text-align: left;
+}
+
+h2 { 
+	margin-bottom: 31px;
+}
+
+form, h2 {
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+	/*to add space between first 3 labels*/
+	form > label:nth-of-type(-n+3)  {
+		margin-bottom: 9px;
+	}
+	
+
+/*******************************************************************
+
+				Footer 
+					
+***************************************************************************/
+
+footer {
+	float: left;	
+	width: 100%;
+	height: 100px;
+	background-color: #2e294e;
+	color: white;
+	
+	display: flex;
+	flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
